@@ -11,11 +11,7 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @EnableCaching
 @EnableConfigurationProperties(RsaKeyProperties.class)
-public class BoubyanTaskApplication extends SpringBootServletInitializer {
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(BoubyanTaskApplication.class);
-    }
+public class BoubyanTaskApplication {
     public static void main(String[] args) {
         SpringApplication.run(BoubyanTaskApplication.class, args);
     }
